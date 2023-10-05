@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+    <title>Projeto Malha | Elas na Tech</title>
+</head>
+
+<body>
+   <header>
+        <nav class="navbar bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/avatar.png" alt="Avatar" width="60" height="94" class="d-inline-block align-text-top">
+                    <h1 class="d-inline-block align-text-top m-3">M.M.M.</h1>
+                    <button class="btn btn-secondary m-5"><a class="navbar-brand" href="https://wa.me/551291061666" target="_blank">Vamos conversar? <br> Faça sua encomenda!</a></button>
+                </a>
+            </div>
+        </nav>
+        <!-- botão do tema claro, digitado/acinado no html o botão modo escuro -->
+        <button class="btn btn-secondary position-absolute top-0 end-0 m-3" id="alterarTemaSite" onclick="alterarTemaSite()"><i class="bi bi-brightness-high-fill"></i></button>
+    </header>
+    <!-- Título -->
+    <h1 class="text-center mb-4 p-3">Mundo Maravilhoso das Malhas</h1>
+    <!-- cards -->
+    <div class="container text-center">
+        <div class="row" id="cards">
+        </div>
+    </div>
+    <!-- Modal = surgir um quadro com a imagem ou descrição ao passar o mouse na imagem-->
+    <div class="modal fade" id="zoomImg" tabindex="-1" aria-labelledby="nomeMalha" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="nomeMalha">Modal title</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="imgModal" class="card-img-top" alt="Imagem da Malha">
+                    <p id="descricaoMalha"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- a class=card-img-top configurou o modal - a imagem que salta ficou centralizada -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="dinamico.js"></script>
+    <!-- estilo css | slogan -->
+    <h2 class="text-center">A maravilha que você imaginou na malha, nós tricotamos para você!</h2>
+    <!-- botão orçamento -->
+    <div class="centro">
+        <img src="./img/la.png" alt="Lã">
+        <a href="https://wa.me/551291061666" class="btn-escolha" target="_blank">Faça seu orçamento</a>
+    </div>
+    <footer>
+        <p> Créditos: JA Brasil | CCR | IBM |
+            <br> Professoras, Monitoras e Equipe Elas na Tech</p>
+        <span id="link">
+            <p>Fontes:
+            <br>@estudantepontodev | Estudante dev | Escola de Programação-Giulia Amaral
+            <br>@DevCHICO | DEV.CHICO-Luis Antonio
+            <br>imagens - Próprias
+            <br>imagens - pixbay.com/pt (cachecol, bolsa, lã) 
+            </p>
+            <br>
+        </span>
+        <span>
+            <h6>
+            &copy; 2023 Adriana Rodrigues de Assis <img src="./img/favicon-16x16.png" alt="ARAs">
+            </h6>
+        </span>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>

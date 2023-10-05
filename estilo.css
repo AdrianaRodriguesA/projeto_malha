@@ -1,0 +1,47 @@
+.centro {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 40px;
+}
+.centro img {
+    border-radius: 10%;
+    border: solid rgb(210, 152, 0);
+    box-shadow: 4px 4px rgb(216, 115, 32, 0.6);
+}
+.btn-escolha{
+    background-color: rgb(76, 86, 84);
+    color: rgb(255, 255, 255);
+    box-shadow: 4px 4px rgba(216, 115, 32, 0.6);
+    text-decoration: none;
+    padding: 15px 32px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 19px;
+    margin-top: 0;
+}
+.btn-escolha:hover{
+    background-color: rgba(74, 84, 82, 0.596);
+    color: rgb(255, 255, 255);
+}
+footer {
+    background-color: rgb(210, 152, 0);
+}
+footer p{
+    padding: 5px;
+}
+#link {
+     padding: 5px;
+}
+footer span h6 {
+    text-align: center;
+    background-color: rgb(112, 109, 110);
+    color: rgb(252, 245, 247);
+    font-weight: 100;
+    font-size: 16px;
+}
+@media (max-width: 500px) {
+.centro {
+    flex-direction: column;
+}
+}
